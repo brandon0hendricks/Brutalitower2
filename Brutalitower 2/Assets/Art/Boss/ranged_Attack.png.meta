@@ -1,0 +1,435 @@
+fileFormatVersion: 2
+guid: 63e8952c10dcd3f4086549d81d88af62
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ranged_Attack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 467
+        height: 131
+      alignment: 9
+      pivot: {x: 0.14000723, y: 0.4148797}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e44c7a1a9e32cb64faf30bf40d45a6e0
+      internalID: -1660851364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ranged_Attack_1
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 0
+        width: 467
+        height: 131
+      alignment: 9
+      pivot: {x: 0.13870965, y: 0.4109489}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf7de0d032f1a64b95f085e1b8e7e20
+      internalID: -1534077687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ranged_Attack_2
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 0
+        width: 467
+        height: 131
+      alignment: 9
+      pivot: {x: 0.13844642, y: 0.41469845}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10e703b5cbee25a449fff2084bc041cc
+      internalID: -1175692959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ranged_Attack_3
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 0
+        width: 467
+        height: 131
+      alignment: 9
+      pivot: {x: 0.13660635, y: 0.41469854}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5d6edc1f6b5013419e75bedf272e7db
+      internalID: -620560377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ranged_Attack_4
+      rect:
+        serializedVersion: 2
+        x: 1868
+        y: 0
+        width: 467
+        height: 131
+      alignment: 9
+      pivot: {x: 0.13686879, y: 0.4090742}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ba4ee485ea9b5d46acda29600a0fad4
+      internalID: 87368316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ranged_Attack_5
+      rect:
+        serializedVersion: 2
+        x: 2335
+        y: 0
+        width: 467
+        height: 131
+      alignment: 9
+      pivot: {x: 0.13897248, y: 0.4100116}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4042c13380bd3045ba87341a6e12675
+      internalID: 125632626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ranged_Attack_6
+      rect:
+        serializedVersion: 2
+        x: 2802
+        y: 0
+        width: 467
+        height: 131
+      alignment: 9
+      pivot: {x: 0.13581695, y: 0.40532473}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faac107da297951418d64658ecfbf9f8
+      internalID: -631266070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ranged_Attack_7
+      rect:
+        serializedVersion: 2
+        x: 3269
+        y: 0
+        width: 467
+        height: 131
+      alignment: 9
+      pivot: {x: 0.13870952, y: 0.40438733}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a97bf8ab4b72ecc49b6f08b4411511ca
+      internalID: 238765375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ranged_Attack_8
+      rect:
+        serializedVersion: 2
+        x: 3736
+        y: 0
+        width: 467
+        height: 131
+      alignment: 9
+      pivot: {x: 0.13976084, y: 0.40626213}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 967f9a5d572229c409d41ee36e442ccb
+      internalID: 329632278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ranged_Attack_9
+      rect:
+        serializedVersion: 2
+        x: 4203
+        y: 0
+        width: 467
+        height: 131
+      alignment: 9
+      pivot: {x: 0.13660479, y: 0.41282362}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 069435020a25253439dd6ac727251c47
+      internalID: -1272707003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ranged_Attack_10
+      rect:
+        serializedVersion: 2
+        x: 4670
+        y: 0
+        width: 467
+        height: 131
+      alignment: 9
+      pivot: {x: 0.13844603, y: 0.4034499}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfa71487142d2874faa6d66a112c4171
+      internalID: -463599814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ranged_Attack_11
+      rect:
+        serializedVersion: 2
+        x: 5137
+        y: 0
+        width: 467
+        height: 131
+      alignment: 9
+      pivot: {x: 0.13660583, y: 0.41657326}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbfaccce9dbdfee40858fc367a0b0257
+      internalID: -1822514639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ranged_Attack_12
+      rect:
+        serializedVersion: 2
+        x: 5604
+        y: 0
+        width: 467
+        height: 131
+      alignment: 9
+      pivot: {x: 0.13765767, y: 0.4100116}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48afb904fa56aa04cbaab3e802123794
+      internalID: 1971122855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ranged_Attack_13
+      rect:
+        serializedVersion: 2
+        x: 6071
+        y: 0
+        width: 467
+        height: 131
+      alignment: 9
+      pivot: {x: 0.13792011, y: 0.40719944}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cb7dd4e90e014d4b9335b07de442177
+      internalID: 999837510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ranged_Attack_0: -1660851364
+      ranged_Attack_1: -1534077687
+      ranged_Attack_10: -463599814
+      ranged_Attack_11: -1822514639
+      ranged_Attack_12: 1971122855
+      ranged_Attack_13: 999837510
+      ranged_Attack_2: -1175692959
+      ranged_Attack_3: -620560377
+      ranged_Attack_4: 87368316
+      ranged_Attack_5: 125632626
+      ranged_Attack_6: -631266070
+      ranged_Attack_7: 238765375
+      ranged_Attack_8: 329632278
+      ranged_Attack_9: -1272707003
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
