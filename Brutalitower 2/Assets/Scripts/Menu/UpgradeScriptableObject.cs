@@ -7,12 +7,9 @@ using UnityEngine;
 
 public class UpgradeScriptableObject : ScriptableObject
 {
-    [SerializeField]
     public string UpgradeType { get; set; }
-    [SerializeField]
     public float UpgradeValue { set; get; }
     public bool IsPurchasable { set; get;}
-    [SerializeField]
     private int upgradePrice;
     public int UpgradePrice
     {

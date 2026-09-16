@@ -42,7 +42,7 @@ public class Player_Movement : MonoBehaviour
         {
             if(IsGrounded())
             {
-                rb.velocity = Vector3.zero; //if dead stop movement
+                rb.linearVelocity = Vector3.zero; //if dead stop movement
                 
             }
         }         
@@ -65,7 +65,7 @@ public class Player_Movement : MonoBehaviour
         }
         else if(animator.GetBool("InAttack") == true)
         {
-            rb.velocity = new Vector2(horizontal / (stats.Speed / 2), rb.velocity.y);
+            rb.linearVelocity = new Vector2(horizontal / (stats.Speed / 2), rb.linearVelocity.y);
         }
     }
 
@@ -84,13 +84,13 @@ public class Player_Movement : MonoBehaviour
         horizontal = Input.GetAxisRaw("Horizontal");
 
         animator.SetFloat("Horizontal", horizontal);
-        animator.SetFloat("Vertical", rb.velocity.y);
+        animator.SetFloat("Vertical", rb.linearVelocity.y);
         animator.SetBool("IsGrounded", IsGrounded());
     }
     void Movement()
     {
        
-            rb.velocity = new Vector2(horizontal * stats.Speed, rb.velocity.y); //Horizontal movement
+            rb.linearVelocity = new Vector2(horizontal * stats.Speed, rb.linearVelocity.y); //Horizontal movement
     }
 
     //checks if player is grounded
@@ -105,15 +105,15 @@ public class Player_Movement : MonoBehaviour
         {
             if (IsGrounded())
             {
-                rb.velocity = new Vector2(rb.velocity.x, stats.JumpPower);
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, stats.JumpPower);
             }
         }
 
         if (Input.GetButtonUp("Jump"))
         {
-            if (rb.velocity.y > 0f)
+            if (rb.linearVelocity.y > 0f)
             {
-                rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * .5f);
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * .5f);
             }
         }
 
@@ -135,7 +135,7 @@ public class Player_Movement : MonoBehaviour
             }
             can_Move = false;
             controller.canTakeDamage = false;
-            rb.velocity = new Vector2(transform.localScale.x * 9.5f, rb.velocity.y);
+            rb.linearVelocity = new Vector2(transform.localScale.x * 9.5f, rb.linearVelocity.y);
             //make Immune
         }
     }
@@ -144,7 +144,7 @@ public class Player_Movement : MonoBehaviour
     {
         animator.SetBool("Sliding", false);
         can_Move = true;
-        rb.velocity = Vector2.zero;      
+        rb.linearVelocity = Vector2.zero;      
         controller.canTakeDamage = true;
         //turn off imunity
     }
@@ -152,10 +152,10 @@ public class Player_Movement : MonoBehaviour
     void fast_Fall()
     {
         float fastFall = 1.7f;
-        if (!IsGrounded() && rb.velocity.y < 0f)
+        if (!IsGrounded() && rb.linearVelocity.y < 0f)
         {
             //Debug.Log("Fast Fall activated");
-            rb.velocity += Vector2.up * Physics2D.gravity.y * (fastFall) * Time.deltaTime;
+            rb.linearVelocity += Vector2.up * Physics2D.gravity.y * (fastFall) * Time.deltaTime;
         }
     }
 

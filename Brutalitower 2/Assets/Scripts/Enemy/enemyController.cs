@@ -87,7 +87,7 @@ public class enemyController : MonoBehaviour
         boneParticles.Play(); // Plays the bone particles
         if (health <= 0f)
         {
-            movementScript.rb.velocity = Vector3.zero;
+            movementScript.rb.linearVelocity = Vector3.zero;
             anim.SetBool("Death", true); // If enemy is out of health, remove it
             movementScript.disabled = true;
         }

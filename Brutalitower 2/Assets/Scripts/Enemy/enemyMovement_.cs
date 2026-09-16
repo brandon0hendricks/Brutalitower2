@@ -55,11 +55,11 @@ public class enemyMovement_ : MonoBehaviour
         {
             runningAttack = StartCoroutine(RunAttack());
         }
-        if (Mathf.Abs(rb.velocity.x) > 0.005f)  // If we are moving, look like it.
+        if (Mathf.Abs(rb.linearVelocity.x) > 0.005f)  // If we are moving, look like it.
         {
             enemyControllerScript.anim.SetBool("Walking", true);
         }
-        else if (Mathf.Abs(rb.velocity.x) <= 0.005f)    // If we aren't moving, don't look like you are
+        else if (Mathf.Abs(rb.linearVelocity.x) <= 0.005f)    // If we aren't moving, don't look like you are
         {
             enemyControllerScript.anim.SetBool("Walking", false);
         }
@@ -72,14 +72,14 @@ public class enemyMovement_ : MonoBehaviour
             }
             else
             {
-                rb.velocity = new Vector2(0, rb.velocity.y);
+                rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
             }
         }
     }
 
     private void Move()     // This tells the enemy where to go, and when to jump
     {
-        rb.velocity = new Vector2(Mathf.Clamp(enemyLocation.x, -1, 1) * speed, rb.velocity.y);  // Set velocity towards the player, at the set speed
+        rb.linearVelocity = new Vector2(Mathf.Clamp(enemyLocation.x, -1, 1) * speed, rb.linearVelocity.y);  // Set velocity towards the player, at the set speed
 
         if (IsWalled() && IsGrounded())   // If hitting a wall, jump
         {
@@ -103,17 +103,17 @@ public class enemyMovement_ : MonoBehaviour
 
     private void Jump()     // Dead simple, same as horizontal movement, just vertical. GET THAT DUNK
     {
-        rb.velocity = new Vector2(rb.velocity.x, jumpPower);
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
     }
 
     private void Attack()
     {
-        rb.velocity = new Vector2(transform.localScale.x * (speed * attackDashSpeed), 0);
+        rb.linearVelocity = new Vector2(transform.localScale.x * (speed * attackDashSpeed), 0);
     }
 
     private void Flip()     // This is how the enemy flips outside of attack. 
     {
-        if (rb.velocity.x < 0)
+        if (rb.linearVelocity.x < 0)
         {
             Vector3 flipScale = transform.localScale;
             flipScale.x = -1;
@@ -169,7 +169,7 @@ public class enemyMovement_ : MonoBehaviour
 
     private IEnumerator RunAttack() // This is how the attack is ran
     {
-        rb.velocity = Vector2.zero;
+        rb.linearVelocity = Vector2.zero;
         FlipToPlayer();
         enemyControllerScript.anim.SetBool("Attacking", true);
         yield return new WaitForSeconds(attackCooldown);
@@ -189,7 +189,7 @@ public class enemyMovement_ : MonoBehaviour
     public void ChargerHitboxDeactivate() // This just undoes the previous.
     {
         hitbox.SetActive(false);
-        rb.velocity = new Vector2(0, 0);
+        rb.linearVelocity = new Vector2(0, 0);
     }
     public void BishopAttack()
     {

@@ -82,7 +82,7 @@ public class Player_Attack : MonoBehaviour
     }
     void Momentum()//add to frame to push player slightly forward
     {
-        rb.AddForce(new Vector2(transform.localScale.x * 15f,rb.velocity.y)*20);
+        rb.AddForce(new Vector2(transform.localScale.x * 15f,rb.linearVelocity.y)*20);
         Game_Manager.instance.Camera_Shake(gameObject.GetComponent<CinemachineImpulseSource>());
     }
 
